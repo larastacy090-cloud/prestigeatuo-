@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prestige Auto Spa - meticulous auto detailing in Yonkers, NY." />
+    <title>Prestige Auto Spa | Yonkers, NY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Prestige Auto Spa home">
+        <span class="brand-mark">P</span>
+        <span>PRESTIGE <em>AUTO SPA</em></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#process">Our approach</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+      <a class="button button-small" href="#booking">Book your detail <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Yonkers' detail studio</p>
+          <h1>Drive out<br /><i>remarkable.</i></h1>
+          <p class="hero-intro">A meticulous clean for the way you move. Prestige Auto Spa brings showroom-level care to every surface, every time.</p>
+          <div class="hero-actions">
+            <a class="button" href="#booking">Get a quote <span>↗</span></a>
+            <a class="text-link" href="tel:9143611919">Call (914) 361-1919 <span>→</span></a>
+          </div>
+          <div class="hero-note"><strong>5.0</strong><span class="stars">★★★★★</span><span>from 15 local reviews</span></div>
+        </div>
+        <div class="hero-image-wrap" data-gallery>
+          <img class="hero-image gallery-image" data-gallery-image src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1400&q=85" alt="A freshly detailed car at Prestige Auto Spa" />
+          <div class="gallery-controls" aria-label="Photo gallery controls">
+            <button type="button" data-gallery-prev aria-label="Previous photo">&lt;-</button>
+            <span><b data-gallery-current>01</b> / <span data-gallery-total>04</span></span>
+            <button type="button" data-gallery-next aria-label="Next photo">-&gt;</button>
+          </div>
+          <div class="image-stamp"><span>01</span><small>Precision<br />in every pass</small></div>
+          <div class="location-chip"><span class="pin">⌖</span><span>50 Palmer Ave<br /><small>Bronxville, NY</small></span></div>
+          <p class="gallery-caption" data-gallery-caption>Exterior finish, carefully considered.</p>
+        </div>
+      </section>
+
+      <section class="trust-row" aria-label="Services at a glance">
+        <span>INTERIOR RESTORATION</span><span>PAINT FINISHING</span><span>PROTECTIVE COATINGS</span><span>LOCAL &amp; INDEPENDENT</span>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading"><p class="eyebrow"><span></span> The treatment menu</p><h2>More than clean.<br /><i>Care, elevated.</i></h2></div>
+        <div class="service-grid">
+          <article class="service-card featured"><span class="card-number">01 / MOST REQUESTED</span><div><h3>Signature Detail</h3><p>Our full reset for a car that deserves a fresh start. Deep interior clean, hand wash, and finish polish.</p><a href="#booking">Explore service <b>→</b></a></div><strong class="price">from $180</strong></article>
+          <article class="service-card"><span class="card-number">02</span><div><h3>Interior Revival</h3><p>Steam-cleaned, conditioned, and reset down to the details you notice most.</p><a href="#booking">Explore service <b>→</b></a></div><strong class="price">from $120</strong></article>
+          <article class="service-card"><span class="card-number">03</span><div><h3>Paint Protection</h3><p>Bring back the gloss and help keep it there with a careful polish and ceramic protection.</p><a href="#booking">Explore service <b>→</b></a></div><strong class="price">from $350</strong></article>
+        </div>
+      </section>
+
+      <section class="split-section" id="process">
+        <div class="process-image"></div>
+        <div class="process-copy"><p class="eyebrow"><span></span> Why Prestige</p><h2>Small details.<br /><i>Big difference.</i></h2><p>We do not rush the work or hide behind a one-size-fits-all package. Every vehicle gets an honest assessment and a finish tailored to how you use it.</p><div class="process-list"><div><b>01</b><span><strong>We look closely</strong><small>Every appointment starts with a real conversation about your car.</small></span></div><div><b>02</b><span><strong>We work carefully</strong><small>Thoughtful products. Experienced hands. No shortcuts.</small></span></div><div><b>03</b><span><strong>You leave proud</strong><small>The kind of clean you keep turning around to look at.</small></span></div></div></div>
+      </section>
+
+      <section class="review-section" id="reviews"><div><p class="eyebrow"><span></span> Local love</p><blockquote>“The best my car has looked since the day I bought it.”</blockquote><p class="reviewer">— A five-star customer in Yonkers</p></div><div class="review-score"><strong>5.0</strong><span>★★★★★</span><small>Google rating</small></div></section>
+
+      <section class="booking" id="booking"><div class="booking-copy"><p class="eyebrow"><span></span> Your car is ready</p><h2>Make a good<br /><i>first impression.</i></h2><p>Tell us a little about your vehicle and we'll recommend the right treatment.</p><a class="button button-light" href="tel:9143611919">Call to book <span>↗</span></a></div><form class="booking-form" onsubmit="return submitForm(event)"><label>Your name<input required name="name" placeholder="Jane Smith" /></label><label>Best way to reach you<input required name="contact" placeholder="Phone or email" /></label><label>What do you drive?<input name="vehicle" placeholder="2021 Audi Q5" /></label><button class="button button-light" type="submit">Request a quote <span>↗</span></button><p class="form-message" aria-live="polite"></p></form></section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="brand-mark">P</span><span>PRESTIGE <em>AUTO SPA</em></span></a><p>50 Palmer Ave, Bronxville, NY · <a href="tel:9143611919">(914) 361-1919</a></p><p>© 2026 Prestige Auto Spa Inc.</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
